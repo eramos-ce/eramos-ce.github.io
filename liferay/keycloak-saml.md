@@ -31,6 +31,7 @@
 7. On the **Signing keys config**, click on **Import key**.
 8. Change the Archive format to Certificate PEM.
 9. Click Browse and select the certificate downloaded on the previous section.
+10. Now, navigate to Realm settings, and copy the URL for the link called SAML 2.0 Identity Provider Metadata.  This will be used as the Metadata URL when connecting to Liferay.
 
  ## Create Keycloak Users
  1. Navigate to Users
@@ -38,4 +39,9 @@
  3. Go to the Credentials tab and set the default password for the new users
 
 ## Configure Liferay SAML IdP    
-
+1. Open the SAML Admin tool
+2. Open the Identity Provider Connections tab
+3. Click Add Identity Provider
+4. Fill out the form.  Note that the Metadata URL can be found on the Realm settings.
+5. The entity ID will be in the form of http://keycloak_hostname/realms/<realm name>
+6. Click save and enable
