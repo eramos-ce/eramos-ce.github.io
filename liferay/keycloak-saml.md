@@ -1,4 +1,6 @@
-# *WIP* How to configure Liferay to authenticate to Keycloak via SAML
+# How to configure Liferay to authenticate to Keycloak via SAML
+
+**NOTE** This article is in progress.
 
 ## Setup Liferay as a Service Provider
 
@@ -43,5 +45,6 @@
 2. Open the Identity Provider Connections tab
 3. Click Add Identity Provider
 4. Fill out the form.  Note that the Metadata URL can be found on the Realm settings.
-5. The entity ID will be in the form of http://keycloak_hostname/realms/<realm name>
-6. Click save and enable
+5. The entity ID will be in the form of http://keycloak_hostname/realms/realm_name
+6. The metadata URL will be in the form of http://keycloak_hostname/realms/realm_name/protocol/saml/descriptor
+7. Click save and enable
